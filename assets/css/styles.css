@@ -10,8 +10,7 @@
 
 /* Colores */
 :root {
-    --first-color: #48a8b7;
-    --second-color: #94dbe5;
+    --first-color: #0a6cff;
 }
 
 /* Typography */
@@ -408,52 +407,74 @@ img {
 }
 
 /* Project */
-.project__subtitle {
-    margin-bottom: var(--mb-2);
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 1);
     text-align: center;
 }
 
-#status {
-    width: 90%;
-    max-width: 500px;
-    text-align: center;
-    padding: 10px;
-    margin: 0 auto;
-    border-radius: 8px;
-    margin-top: 10px;
+.project-title {
+    margin: 1rem;
+    color: black;
 }
 
-#status.success {
-    background-color: rgb(211, 250, 153);
-    animation: status 1s ease forwards;
+/* Buttons */
+
+.btn-container {
+    gap: 1rem;
 }
 
-#status.error {
-    background-color: rgb(250, 129, 92);
-    color: #060707;
-    animation: status 4s ease forwards;
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-@keyframes status {
-    0% {
-        opacity: 1;
-        pointer-events: all;
-    }
-
-    90% {
-        opacity: 1;
-        pointer-events: all;
-    }
-
-    100% {
-        opacity: 0;
-        pointer-events: none;
-    }
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
 }
+
+.btn-color-1,
+.btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-color-1:hover {
+    background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+
 
 /* Footer */
 .footer {
-    background-color: var(--second-color);
+    background-color: #ffff;
+    box-shadow: -1px -1px 1px 1px rgba(0, 0, 0, 0.15);
     color: #060707;
     text-align: center;
     font-weight: var(--font-semi);
@@ -474,6 +495,7 @@ img {
     color: #060707;
     margin: 0 var(--mb-2);
 }
+
 
 
 /* Medua Queries */
@@ -572,8 +594,125 @@ img {
     }
 }
 
-/* @media screen and (max-width: 768px) {
-    .skills__img {
-        opacity: 0;
-    }
-} */
+/* New Section */
+
+.section-project {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+}
+
+.section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+#experience {
+    position: relative;
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+    position: relative;
+}
+
+.color-container {
+    background: rgb(250, 250, 250);
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title {
+    margin: 1rem;
+    color: black;
+}
+
+.project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
