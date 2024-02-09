@@ -9,11 +9,17 @@
     <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Poppins';
+        }
+    </style>
 </head>
 
-<body class="font-body">
+<body>
     <!-- Header -->
-    <header class="bg-white shadow-md">
+
+    <header class="navbar border-b border-black border-solid border-opacity-25">
         <div class="max-w-screen-lg mx-auto px-4 py-6 flex justify-between items-center">
             <a href="#" class="text-lg font-bold text-black hover:text-indigo-700">Ferdy Diatmika</a>
             <button id="nav-toggle" class="md:hidden focus:outline-none">
@@ -32,7 +38,6 @@
                 <li>
                     <a href="#projects" class="hover:text-indigo-500">Projects</a>
                 </li>
-
             </ul>
         </div>
     </header>
@@ -40,11 +45,11 @@
     <main>
         <!-- Home -->
         <section id="home" class="h-screen flex flex-col md:flex-row justify-center items-center text-center bg-white">
-            <img src="./assets/img/ferdy.webp" alt="Ferdy Diatmika"
-                class="w-48 h-48 md:w-96 md:h-96 rounded-full shadow-md mb-4 md:mb-0 md:mr-8" />
+            <img src="./assets/img/ferdy2.webp" alt="./assets/img/ferdy.webp"
+                class="w-48 h-48 md:w-96 md:h-96 rounded-full shadow-md mb-4 md:mb-0 md:mr-8 object-cover" />
             <div class="md:text-left">
                 <h1 class="text-4xl md:text-6xl font-bold mb-4 text-gray-800">
-                    Hello, I'm Ferdy Diatmika
+                    Hello, <span class="block">I'm Ferdy Diatmika</span>
                 </h1>
                 <p class="text-lg md:text-xl mb-8 text-gray-600">
                     A student who loves sports and is passionate about coding.
@@ -54,7 +59,6 @@
                     Me</a>
             </div>
         </section>
-
 
         <!-- Skills -->
         <section id="skills" class="py-12 bg-white">
@@ -107,7 +111,6 @@
             </div>
         </section>
 
-
         <!-- Gallery -->
         <!-- <section id="gallery" class="py-12 bg-white">
             <div class="max-w-screen-lg mx-auto px-4">
@@ -140,8 +143,8 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="bg-white rounded-lg shadow-md p-6 project-card">
                         <img src="./assets/img/project-2.webp" alt="Project 1" class="w-full h-auto rounded-lg mb-4" />
-                        <h3 class="text-xl font-semibold mb-2">Coming Soon</h3>
-                        <p class="text-lg mb-4">Not Found 404</p>
+                        <h3 class="text-xl font-semibold mb-2 text-center">Coming Soon</h3>
+                        <p class="text-lg mb-4 text-center">Not Found 404</p>
                         <div class="flex justify-center space-x-4">
                             <a href="#"
                                 class="bg-indigo-700 hover:bg-indigo-600 text-white py-2 px-6 rounded-full font-semibold transition duration-300 ease-in-out">GitHub</a>
@@ -164,8 +167,8 @@
                     </div>
                     <div class="bg-white rounded-lg shadow-md p-6 project-card">
                         <img src="./assets/img/project-2.webp" alt="Project 2" class="w-full h-auto rounded-lg mb-4" />
-                        <h3 class="text-xl font-semibold mb-2">Coming Soon</h3>
-                        <p class="text-lg mb-4">Not Found 404</p>
+                        <h3 class="text-xl font-semibold mb-2 text-center">Coming Soon</h3>
+                        <p class="text-lg mb-4 text-center">Not Found 404</p>
                         <div class="flex justify-center space-x-4">
                             <a href="#"
                                 class="bg-indigo-700 hover:bg-indigo-600 text-white py-2 px-6 rounded-full font-semibold transition duration-300 ease-in-out">GitHub</a>
@@ -180,7 +183,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="text-black text-center py-6">
+    <footer class="text-black text-center py-6 border-t border-black border-opacity-25">
         <p>&#169; 2020 Ferdy Diatmika. All rights reserved.</p>
         <div class="mt-4">
             <a href="#" class="text-3xl inline-block mx-2 footer-icon"><i class="bx bxl-discord"></i></a>
@@ -188,22 +191,6 @@
             <a href="#" class="text-3xl inline-block mx-2 footer-icon"><i class="bx bxl-twitter"></i></a>
         </div>
     </footer>
-
-    <script>
-        const navToggle = document.getElementById('nav-toggle');
-        const navLinks = document.querySelector('.nav-links');
-
-        navToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Close nav when clicking outside
-        document.addEventListener('mouseup', function (e) {
-            if (!navLinks.contains(e.target) && !navToggle.contains(e.target)) {
-                navLinks.classList.remove('active');
-            }
-        });
-    </script>
 </body>
 
 </html>
