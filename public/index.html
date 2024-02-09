@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ferdy Diatmika</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="font-body">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="max-w-screen-lg mx-auto px-4 py-6 flex justify-between items-center">
+            <a href="#" class="text-lg font-bold text-black hover:text-indigo-700">Ferdy Diatmika</a>
+            <button id="nav-toggle" class="md:hidden focus:outline-none">
+                <i class="bx bx-menu text-xl text-black hover:text-indigo-700"></i>
+            </button>
+            <ul class="hidden md:flex space-x-6 text-black font-semibold gap-5 nav-links">
+                <li>
+                    <a href="#home" class="nav-link hover:text-indigo-500 relative after:">Home</a>
+                </li>
+                <li>
+                    <a href="#skills" class="hover:text-indigo-500">Skills</a>
+                </li>
+                <li>
+                    <a href="#gallery" class="hover:text-indigo-500">Gallery</a>
+                </li>
+                <li>
+                    <a href="#projects" class="hover:text-indigo-500">Projects</a>
+                </li>
+
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section id="home" class="h-screen flex flex-col md:flex-row justify-center items-center text-center bg-white">
+            <img src="../assets/img/ferdy.webp" alt="Ferdy Diatmika"
+                class="w-48 h-48 md:w-96 md:h-96 rounded-full shadow-md mb-4 md:mb-0 md:mr-8" />
+            <div class="md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 text-gray-800">
+                    Hello, I'm Ferdy Diatmika
+                </h1>
+                <p class="text-lg md:text-xl mb-8 text-gray-600">
+                    A student who loves sports and is passionate about coding.
+                </p>
+                <a href="#about"
+                    class="bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-8 rounded-full font-semibold transition duration-300 ease-in-out shadow-md">About
+                    Me</a>
+            </div>
+        </section>
+
+
+        <!-- Skills -->
+        <section id="skills" class="py-12 bg-white">
+            <div class="max-w-lg mx-auto px-4">
+                <h2 class="text-3xl text-indigo-600 mb-8 text-center font-semibold">
+                    Skills
+                </h2>
+
+                <!-- JavaScript Skill -->
+                <div class="skill-box mb-4 p-4 rounded-lg shadow-md px-10">
+                    <div class="flex items-center justify-between mb-2 font-semibold">
+                        <span class="text-lg"><i class="bx bxl-javascript text-2xl mr-2"></i>JavaScript</span>
+                        <span class="text-gray-600">85%</span>
+                    </div>
+                    <div class="w-full bg-gray-300 rounded-full">
+                        <div class="bg-blue-500 text-xs leading-none py-1 rounded-full text-center text-white transition width-300 ease-in-out"
+                            style="width: 85%">
+                            85%
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HTML Skill -->
+                <div class="skill-box mb-4 p-4 rounded-lg shadow-md">
+                    <div class="flex items-center justify-between mb-2 font-semibold">
+                        <span class="text-lg"><i class="bx bxl-html5 text-2xl mr-2"></i>HTML</span>
+                        <span class="text-gray-600">90%</span>
+                    </div>
+                    <div class="w-full bg-gray-300 rounded-full">
+                        <div class="bg-green-500 text-xs leading-none py-1 rounded-full text-center text-white transition width-300 ease-in-out"
+                            style="width: 90%">
+                            90%
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CSS Skill -->
+                <div class="skill-box mb-4 p-4 rounded-lg shadow-md">
+                    <div class="flex items-center justify-between mb-2 font-semibold">
+                        <span class="text-lg"><i class="bx bxl-css3 text-2xl mr-2"></i>CSS</span>
+                        <span class="text-gray-600">80%</span>
+                    </div>
+                    <div class="w-full bg-gray-300 rounded-full">
+                        <div class="bg-yellow-500 text-xs leading-none py-1 rounded-full text-center text-white transition width-300 ease-in-out"
+                            style="width: 80%">
+                            80%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Gallery -->
+        <!-- <section id="gallery" class="py-12 bg-white">
+            <div class="max-w-screen-lg mx-auto px-4">
+                <h2 class="text-3xl text-indigo-600 mb-8 text-center font-semibold">
+                    Gallery
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <img src="../assets/img/work1.webp" alt="Work 1"
+                        class="rounded-lg shadow-md transition duration-300 transform hover:scale-110" />
+                    <img src="../assets/img/work2.webp" alt="Work 2"
+                        class="rounded-lg shadow-md transition duration-300 transform hover:scale-110" />
+                    <img src="../assets/img/work3.webp" alt="Work 3"
+                        class="rounded-lg shadow-md transition duration-300 transform hover:scale-110" />
+                    <img src="../assets/img/work4.webp" alt="Work 4"
+                        class="rounded-lg shadow-md transition duration-300 transform hover:scale-110" />
+                    <img src="../assets/img/work5.webp" alt="Work 5"
+                        class="rounded-lg shadow-md transition duration-300 transform hover:scale-110" />
+                    <img src="../assets/img/work6.webp" alt="Work 6"
+                        class="rounded-lg shadow-md transition duration-300 transform hover:scale-110" />
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Projects -->
+        <section id="projects" class="py-12 bg-white">
+            <div class="max-w-screen-lg mx-auto px-4">
+                <h2 class="text-3xl text-indigo-600 mb-8 text-center font-semibold">
+                    Projects
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6 project-card">
+                        <img src="../assets/img/project-2.webp" alt="Project 1" class="w-full h-auto rounded-lg mb-4" />
+                        <h3 class="text-xl font-semibold mb-2">Coming Soon</h3>
+                        <p class="text-lg mb-4">Not Found 404</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="#"
+                                class="bg-indigo-700 hover:bg-indigo-600 text-white py-2 px-6 rounded-full font-semibold transition duration-300 ease-in-out">GitHub</a>
+                            <a href="#"
+                                class="bg-indigo-700 hover:bg-indigo-600 text-white py-2 px-6 rounded-full font-semibold transition duration-300 ease-in-out">Live
+                                Demo</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 project-card">
+                        <img src="../assets/img/mobile.webp" alt="Project 2" class="w-full h-auto rounded-lg mb-4" />
+                        <h3 class="text-xl font-semibold mb-2 text-center">KomikVerse</h3>
+                        <p class="text-lg mb-4 text-center">Baca Komik Gratis!</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="https://github.com/FerdyDiatmika/my-komiku"
+                                class="bg-indigo-700 hover:bg-indigo-600 text-white py-2 px-6 rounded-full font-semibold transition duration-300 ease-in-out">GitHub</a>
+                            <a href="https://my-komiku.vercel.app"
+                                class="bg-indigo-700 hover:bg-indigo-600 text-white py-2 px-6 rounded-full font-semibold transition duration-300 ease-in-out">Live
+                                Demo</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 project-card">
+                        <img src="../assets/img/project-2.webp" alt="Project 2" class="w-full h-auto rounded-lg mb-4" />
+                        <h3 class="text-xl font-semibold mb-2">Coming Soon</h3>
+                        <p class="text-lg mb-4">Not Found 404</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="#"
+                                class="bg-indigo-700 hover:bg-indigo-600 text-white py-2 px-6 rounded-full font-semibold transition duration-300 ease-in-out">GitHub</a>
+                            <a href="#"
+                                class="bg-indigo-700 hover:bg-indigo-600 text-white py-2 px-6 rounded-full font-semibold transition duration-300 ease-in-out">Live
+                                Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-black text-center py-6">
+        <p>&#169; 2020 Ferdy Diatmika. All rights reserved.</p>
+        <div class="mt-4">
+            <a href="#" class="text-3xl inline-block mx-2 footer-icon"><i class="bx bxl-discord"></i></a>
+            <a href="#" class="text-3xl inline-block mx-2 footer-icon"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="text-3xl inline-block mx-2 footer-icon"><i class="bx bxl-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close nav when clicking outside
+        document.addEventListener('mouseup', function (e) {
+            if (!navLinks.contains(e.target) && !navToggle.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>

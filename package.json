@@ -1,0 +1,23 @@
+{
+  "name": "ferdydiatmika.github.io",
+  "version": "1.0.0",
+  "description": "<h1>Personal Portfolio</h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FerdyDiatmika/ferdydiatmika.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FerdyDiatmika/ferdydiatmika.github.io/issues"
+  },
+  "homepage": "https://github.com/FerdyDiatmika/ferdydiatmika.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
